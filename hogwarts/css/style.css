@@ -1,0 +1,173 @@
+@import url("https://fonts.cdnfonts.com/css/harry-potter");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+                                             
+}
+
+.estudiante {
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/hogwarts-aesthetic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h2 { font-size: 40px;
+    font-family: 'Harry Potter', sans-serif; 
+    display: flex;
+    justify-content: center;
+    color: #f1ce89;
+    animation: hogwarts 5s;
+
+}
+form {
+margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  font-family: 'Alegreya', serif;  
+  
+}
+.inputs {
+    width: 300px;
+    font-size: 20px;
+}
+.boton {
+    margin-top: 20px;
+    background: #f1ce89;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    transition: 1s;
+    font-size: 15px;
+}
+.boton:hover {
+    background: #7f0909;
+    font-size: 15px;
+}
+
+.seleValores .valores {
+  font-size: 50px;
+  font-family: 'Harry Potter', sans-serif;
+  color: #f1ce89;
+  }
+
+.seleValores {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.bienvenida{
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: #f1ce89;
+  font-family: 'Harry Potter', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/sombrero.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-shadow: 35px 18px 10px rgba(0,0,0,1);
+
+}
+
+.bienvenida h2{
+  animation: subeybaja 10s infinite;
+  display: none;
+}
+
+.aceptar {
+  font-size: 15px;
+  padding: 3px;
+ }
+.aceptar:hover {
+  transition: 1s;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #7f0909;
+}
+
+
+#cualidades {
+  padding: 3px;
+  font-size: 25px;
+}
+
+.mostrar{
+  display: flex;
+}
+
+.cargando {
+  font-size: 40px;
+  color: #ee050598;
+  font-family: 'Harry Potter', sans-serif;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: loading 5s infinite;
+
+}
+
+@keyframes subeybaja {
+  0% {
+    transform: translateY(70px);
+  }
+  25%{
+    transform: translateY(-70px);
+  }
+  50%{
+    transform: translateY(70px);
+  }
+  75%{
+    transform: translateY(-70px);
+  }
+  100%{
+    transform: translateY(70px);
+  }
+  
+}
+
+@keyframes loading {
+  0%{
+    opacity: 0%;
+  }
+  50%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+
+@keyframes hogwarts {
+
+  from{
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.8);
+  }
+
+}

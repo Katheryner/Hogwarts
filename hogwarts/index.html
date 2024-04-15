@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Document</title>
-</head>
-<body>
-    <form action="estudiante">
-        <input type="text" name="name">
+  </head>
+  <body>
+    <audio id="harry" src="/img/y2mate.com - harry potter musica.mp3"></audio>
+    <div class="estudiante mostrar" id="estudiante">
+      <h2>¡Bienvenido a Hogwarts!</h2>
+      <form id="student">
+        <input type="text" id="name" name="name" placeholder="Nombre" class="inputs"/>
+        <input type="number" id="edad" name="edad" placeholder="Edad" class="inputs"/>
+        <input type="text" id="familia" name="familia" placeholder="Familia (Apellido)" class="inputs"/>
+        <select id="linaje" class="inputs">
+          <option value="" hidden selected>Linaje</option>
+          <option value="muggle">Muggle</option>
+          <option value="mestizo">Mestizo</option>
+          <option value="sangre pura">Sangre Pura</option>
+        </select>
+      </form>
+      <button class="boton" id="registrar">Registrar</button>
+    </div>
+    <div class="seleValores" id="valores">
+      <form class="valoresP">
+        <label class="valores">Selecciona tus cualidades</label>
+        <select name="" id="cualidades">
+          <option value="Valor,Fuerza,Audacia">Valor,Fuerza,Audacia</option>
+          <option value="Justicia, Lealtad, Paciencia">Justicia, Lealtad, Paciencia</option>
+          <option value="Creatividad, Erudición, Inteligencia">Creatividad, Erudición, Inteligencia</option>
+          <option value="Ambición, Determinación, Astucia">Ambición, Determinación, Astucia</option>
+        </select>
+        <button class="aceptar" id="casa">Seleccionar Casa</button>
+      </form>
+    </div>
+    
+    <div class="bienvenida" id="bienvenida">
+      
+      <h2>bienvenida</h2>
+      <div class="cargando">
+        <p>Seleccionando casa...</p>
+        <audio id="aplausos" src="/img/y2mate.com - Sonido de aplausos.mp3"></audio>
+      </div>
+      
+      <img src="" id="imagencasa" alt="">
+    </div>
 
-    </form>
+  <div class="animalP">
+    <button class="animal"></button>
+  </div>
+
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
